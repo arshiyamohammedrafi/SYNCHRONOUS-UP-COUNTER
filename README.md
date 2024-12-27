@@ -36,7 +36,7 @@ However, the remaining flip-flops should be made ready to toggle only when all l
  5. For different input combinations generate the timing diagram
 **PROGRAM**
 
-module ex11(out,clk,rst);
+````module ex11(out,clk,rst);
 input clk,rst;
 output reg [3:0]out;
 always @ (posedge clk)
@@ -47,6 +47,7 @@ begin
      out <= out+1;
 end
 endmodule
+````
 
 
 **RTL LOGIC UP COUNTER**
@@ -54,12 +55,8 @@ endmodule
 
 
 **TIMING DIAGRAM FOR IP COUNTER**
-![Screenshot 2024-12-20 223926](https://github.com/user-attachments/assets/73f83ace-011c-42b9-9509-a789efcc7cc3)
 
-
-**TRUTH TABLE**
-![Screenshot 2024-12-20 224614](https://github.com/user-attachments/assets/27fa7490-aca9-4a26-9114-96ae9477fdc7)
-
+![Screenshot 2024-12-27 182150](https://github.com/user-attachments/assets/1008e109-c124-41fe-87f0-2bf3960adb5a)
 
 **RESULTS**
  Thus 4 bit synchronous up counter is implemented and functionality is validated
